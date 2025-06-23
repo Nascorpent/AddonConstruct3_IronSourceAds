@@ -1,0 +1,33 @@
+﻿{
+    "is-c3-addon": true,
+    "sdk-version": 2, 
+    "type": "plugin",
+    "name": "Nascorpent_IronSourceAds",
+    "id": "Nascorpent_IronSourceAds", 
+    "version": "1.0.0.0", 
+    "author": "NascorpEnt",
+    "website": "https://www.construct.net", 
+    "documentation": "https://www.construct.net", 
+    "description": "Addon para integrar o IronSourceAds em jogos e aplicativos Construct 3.",
+    "editor-scripts": [
+        "plugin.js",
+        "type.js",
+        "instance.js"
+    ],
+    "file-list": [
+        "c3runtime/plugin.js",
+        "c3runtime/type.js",
+        "c3runtime/instance.js",
+        "c3runtime/conditions.js",
+        "c3runtime/actions.js",
+        "c3runtime/expressions.js",
+        "lang/en-US.json", 
+        "aces.json", 
+        "addon.json",
+        "icon.svg", 
+        "instance.js",
+        "plugin.js",
+        "type.js"
+    ],    
+    "isCordovaPlugin": true
+}

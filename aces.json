@@ -1,0 +1,286 @@
+﻿{
+	"$schema": "../aces.schema.json",
+	"start": {
+		"actions": [
+			{
+				"id": "inicializar-ironsourceads",
+				"scriptName": "inicializarIronSourceAds",
+				"isDeprecated": false,
+				"isAsync": true,
+				"params": [
+					{
+						"id": "is-test",
+						"name": "Test",
+						"desc": "Set Test Mode",
+						"type": "boolean"
+					}
+				]
+			}
+		],
+		"conditions": [],
+		"expressions": []
+	},
+	"verification": {
+		"actions": [
+			{
+				"id": "verificar-ironsourceplugin-available",
+				"scriptName": "verificarIronSourceAdsPluginAvailable",
+				"isDeprecated": false,
+				"isAsync": true,
+				"params": []
+			}
+		],
+		"conditions": [
+			{
+				"id": "is-plugin-available",
+				"scriptName": "isPluginAvailable",
+				"isDeprecated": false,
+				"isCompatibleWithTriggers": false,
+				"isInvertible": false,
+				"isTrigger": true			
+			},
+			{
+				"id": "is-plugin-not-available",
+				"scriptName": "isPluginNotAvailable",
+				"isDeprecated": false,
+				"isCompatibleWithTriggers": false,
+				"isInvertible": false,
+				"isTrigger": true			
+			}
+		],
+		"expressions": [
+			{
+				"id": "lastplacementid",
+				"expressionName": "lastPlacementId",
+				"isDeprecated": false,
+				"returnType": "string",
+				"params": []
+			},
+			{
+				"id": "lastadinfo",
+				"expressionName": "lastAdInfo",
+				"isDeprecated": false,
+				"returnType": "string",
+				"params": []
+			},
+			{
+				"id": "lastplacementiderror",
+				"expressionName": "lastPlacementId_Error",
+				"isDeprecated": false,
+				"returnType": "string",
+				"params": []
+			},
+			{
+				"id": "lasterrorcode",
+				"expressionName": "lastErrorCode",
+				"isDeprecated": false,
+				"returnType": "string",
+				"params": []
+			},
+			{
+				"id": "lasterrormessage",
+				"expressionName": "lastErrorMessage",
+				"isDeprecated": false,
+				"returnType": "string",
+				"params": []
+			}
+		]
+	},
+	"rewarded": {
+		"actions": [
+			{
+				"id": "verificar-is-rewarded-available",
+				"scriptName": "verificarIsRewardedVideoAvailable",
+				"isDeprecated": false,
+				"isAsync": true,
+				"params": []
+			},
+			{
+				"id": "load-rewarded-video",
+				"scriptName": "loadRewardedVideo",
+				"isDeprecated": false,
+				"isAsync": true,
+				"params": []
+			},
+			{
+				"id": "show-rewarded-video",
+				"scriptName": "showRewardedVideo",
+				"isDeprecated": false,
+				"isAsync": true,
+				"params": [
+					{
+						"id": "placementid",
+						"name": "Placement ID",
+						"desc": "Name of the Placement",
+						"type":"string"
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"id": "is-rewarded-available",
+				"scriptName": "isRewardedAvailable",
+				"isDeprecated": false,
+				"isCompatibleWithTriggers": false,
+				"isInvertible": false,
+				"isTrigger": true			
+			},
+			{
+				"id": "is-rewarded-not-available",
+				"scriptName": "isRewardedNotAvailable",
+				"isDeprecated": false,
+				"isCompatibleWithTriggers": false,
+				"isInvertible": false,
+				"isTrigger": true			
+			},
+			{
+				"id": "rewarded-completed",
+				"scriptName": "rewardedCompleted",
+				"isDeprecated": false,
+				"isCompatibleWithTriggers": false,
+				"isInvertible": false,
+				"isTrigger": true			
+			},
+			{
+				"id": "rewarded-failed",
+				"scriptName": "rewardedDisplayFailed",
+				"isDeprecated": false,
+				"isCompatibleWithTriggers": false,
+				"isInvertible": false,
+				"isTrigger": true			
+			},
+			{
+				"id": "rewarded-canceled",
+				"scriptName": "rewardedAdCanceled",
+				"isDeprecated": false,
+				"isCompatibleWithTriggers": false,
+				"isInvertible": false,
+				"isTrigger": true			
+			}
+		],
+		"expressions": []
+	},
+	"interstitial": {
+		"actions": [
+			{
+				"id": "verificar-is-interstitial-available",
+				"scriptName": "verificarIsInterstitialAvailable",
+				"isDeprecated": false,
+				"isAsync": true,
+				"params": []
+			},
+			{
+				"id": "load-interstitial-video",
+				"scriptName": "loadInterstitial",
+				"isDeprecated": false,
+				"isAsync": true,
+				"params": []
+			},
+			{
+				"id": "show-interstitial-video",
+				"scriptName": "showInterstitial",
+				"isDeprecated": false,
+				"isAsync": true,
+				"params": [
+					{
+						"id": "placementid",
+						"name": "Placement ID",
+						"desc": "Name of the Placement",
+						"type":"string"
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"id": "is-interstitial-available",
+				"scriptName": "isInterstitialAvailable",
+				"isDeprecated": false,
+				"isCompatibleWithTriggers": false,
+				"isInvertible": false,
+				"isTrigger": true			
+			},
+			{
+				"id": "is-interstitial-not-available",
+				"scriptName": "isInterstitialNotAvailable",
+				"isDeprecated": false,
+				"isCompatibleWithTriggers": false,
+				"isInvertible": false,
+				"isTrigger": true			
+			}
+		],
+		"expressions": []
+	},
+	"placementcheck": {
+		"actions": [
+			{
+				"id": "check-capped-placement",
+				"scriptName": "checkCappedPlacement",
+				"isDeprecated": false,
+				"isAsync": true,
+				"params": [
+					{
+						"id": "placementid",
+						"name": "Placement ID",
+						"desc": "Name of the Placement",
+						"type":"string"
+					}
+				]
+			}			
+		],
+		"conditions": [
+			{
+				"id": "is-placement-capped",
+				"scriptName": "isPlacementCapped",
+				"isDeprecated": false,
+				"isCompatibleWithTriggers": false,
+				"isInvertible": false,
+				"isTrigger": true			
+			},
+			{
+				"id": "is-placement-not-capped",
+				"scriptName": "isPlacementNotCapped",
+				"isDeprecated": false,
+				"isCompatibleWithTriggers": false,
+				"isInvertible": false,
+				"isTrigger": true			
+			}
+		],
+		"expressions": []
+	},
+	"consentcheck": {
+		"actions": [
+			{
+				"id": "gdpr-consent-definer",
+				"scriptName": "GDPRConsentDefiner",
+				"isDeprecated": false,
+				"isAsync": true,
+				"params": [
+					{
+						"id": "consent",
+						"name": "consent",
+						"desc": "Name of the Placement",
+						"type":"boolean"
+					}
+				]
+			},
+			{
+				"id": "sale-or-sharing-definer",
+				"scriptName": "saleOrSharingDefiner",
+				"isDeprecated": false,
+				"isAsync": true,
+				"params": [
+					{
+						"id": "consent",
+						"name": "consent",
+						"desc": "Name of the Placement",
+						"type":"boolean"
+					}
+				]
+			}				
+		],
+		"conditions": [],
+		"expressions": []
+	}
+}

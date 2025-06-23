@@ -1,0 +1,198 @@
+﻿{
+	"$schema": "../../plugin.lang.schema.json",
+	"languageTag": "en-US",
+	"fileDescription": "Strings for the plugin.",
+	"text": {
+		"plugins": {
+			"nascorpent_ironsourceads": {
+				"name": "Nascorpent_IronSourceAds",
+				"description": "Iron Source Ads (Android)",
+				"help-url": "https://www.construct.net",
+				"properties": {},
+				"aceCategories": {
+					"start": "Initialization",
+					"verification": "Initialization Verifications",
+					"rewarded": "Rewarded Ads",
+					"interstitial": "Interstitial Ads",
+					"placementcheck": "Placement Check",
+					"consentcheck": "Consent Check"
+				},
+				"actions": {
+					"inicializar-ironsourceads": {
+						"list-name": "Start IronSourceAds",
+						"display-text": "Start IronSourceAds, (Test Mode: [i]{0}[/i])",
+						"description": "Iron Source Ads Initialization.",
+						"params": {
+							"is-test": {
+								"name": "TestMode",
+								"desc": "Enable/Disable Test Mode"
+							}
+						}
+					},
+					"verificar-ironsourceplugin-available": {
+						"list-name": "Verify IronSourceAds is Available",
+						"display-text": "Verify IronSourceAds is Available",
+						"description": "Triggers IsPluginAvailable or isPluginNotAvailable.",
+						"params": {}
+					},
+					"verificar-is-rewarded-available": {
+						"list-name": "Verify if Rewarded Ad is Available",
+						"display-text": "Verify if Rewarded Ad is Available",
+						"description": "Triggers IsRewardedAvailable or IsRewardedNotAvailable.",
+						"params": {}
+					},
+					"load-rewarded-video": {
+						"list-name": "Request New Rewarded Ad",
+						"display-text": "Request New Rewarded Ad",
+						"description": "Request New Rewarded Ad.",
+						"params": {}
+					},
+					"show-rewarded-video": {
+						"list-name": "Show Rewarded Ad",
+						"display-text": "Show Rewarded Ad, (Placement ID: [i]{0}[/i])",
+						"description": "Show Rewarded Ad.",
+						"params": {
+							"placementid": { 
+								"name": "Placement ID", 
+								"desc": "Name of the Placement" }
+						}
+					},					
+					"verificar-is-interstitial-available": {
+						"list-name": "Verify if interstitial Ad is Available",
+						"display-text": "Verify if interstitial Ad is Available",
+						"description": "Triggers IsinterstitialAvailable or IsinterstitialNotAvailable.",
+						"params": {}
+					},
+					"load-interstitial-video": {
+						"list-name": "Request New interstitial Ad",
+						"display-text": "Request New interstitial Ad",
+						"description": "Request New interstitial Ad.",
+						"params": {}
+					},
+					"show-interstitial-video": {
+						"list-name": "Show interstitial Ad",
+						"display-text": "Show interstitial Ad, (Placement ID: [i]{0}[/i])",
+						"description": "Show interstitial Ad.",
+						"params": {
+							"placementid": { 
+								"name": "Placement ID", 
+								"desc": "Name of the Placement" }
+						}
+					},
+					"check-capped-placement": {
+						"list-name": "Check Capped Placement",
+						"display-text": "Check Capped Placement, (Placement ID: [i]{0}[/i])",
+						"description": "Checks if an Ad Placement is Capped",
+						"params": {
+							"placementid": { 
+								"name": "Placement ID", 
+								"desc": "Name of the Placement" }
+						}
+					},
+					"gdpr-consent-definer": {
+						"list-name": "Set GDPR Consent",
+						"display-text": "Set GDPR Consent, (Consent: [i]{0}[/i])",
+						"description": "Sets GDPR Consent for True(consent) or False(do not consent)",
+						"params": {
+							"consent": { 
+								"name": "Consent", 
+								"desc": "Consent" }
+						}
+					},
+					"sale-or-sharing-definer": {
+						"list-name": "Set Sale or Sharing Consent",
+						"display-text": "Set Sale or Sharing Consent, (Consent: [i]{0}[/i])",
+						"description": "Sets Sale or Sharing Consent for True(consent) or False(do not consent)",
+						"params": {
+							"consent": { 
+								"name": "Consent", 
+								"desc": "Consent" }
+						}
+					}
+				},
+				"conditions": {
+					"is-plugin-available": {
+						"list-name": "IsPluginAvailable",
+						"display-text": "IsPluginAvailable",
+						"description":"Triggers if the Plugin IronSourceAds is Available."
+					},
+					"is-plugin-not-available": {
+						"list-name": "IsPluginNotAvailable",
+						"display-text": "IsPluginNotAvailable",
+						"description":"Triggers if the Plugin IronSourceAds is Not Available."
+					},
+					"is-rewarded-available": {
+						"list-name": "IsRewardedAvailable",
+						"display-text": "IsRewardedAvailable",
+						"description":"Triggers if the Rewarded Ad is Available."
+					},
+					"is-rewarded-not-available": {
+						"list-name": "IsRewardedNotAvailable",
+						"display-text": "IsRewardedNotAvailable",
+						"description":"Triggers if the Rewarded Ad is Not Available."
+					},
+					"rewarded-completed": {
+						"list-name": "On Rewarded Completed",
+						"display-text": "On Rewarded Completed",
+						"description": "Triggers when a rewarded ad completes.",
+						"params": {}
+					},
+					"rewarded-failed": {
+						"list-name": "On Rewarded Failed",
+						"display-text": "On Rewarded Failed",
+						"description": "Triggers when a rewarded ad fails to show.",
+						"params": {}
+					},
+					"rewarded-canceled": {
+						"list-name": "On Rewarded Canceled",
+						"display-text": "On Rewarded Canceled",
+						"description": "Triggers when a rewarded ad is Canceled.",
+						"params": {}
+					},
+					"is-interstitial-available": {
+						"list-name": "IsInterstitialAvailable",
+						"display-text": "IsInterstitialAvailable",
+						"description":"Triggers if the Interstitial Ad is Available."
+					},
+					"is-interstitial-not-available": {
+						"list-name": "IsInterstitialNotAvailable",
+						"display-text": "IsInterstitialNotAvailable",
+						"description":"Triggers if the Interstitial Ad is Not Available."
+					},
+					"is-placement-capped": {
+						"list-name": "isPlacementCapped",
+						"display-text": "isPlacementCapped",
+						"description":"Triggers if the Placement Name is Capped."
+					},
+					"is-placement-not-capped": {
+						"list-name": "isPlacementNotCapped",
+						"display-text": "isPlacementNotCapped",
+						"description":"Triggers if the Placement Name is NOT Capped."
+					}
+				},
+				"expressions": {
+					"lastplacementid": {
+						"translated-name": "lastPlacementId",
+						"description": "Last Placement ID from Rewarded AD."
+					},
+					"lastadinfo": {
+						"translated-name": "lastAdInfo",
+						"description": "Last Infos from Rewarded AD."
+					},
+					"lastplacementiderror": {
+						"translated-name": "lastPlacementId_Error",
+						"description": "Last Placement ID from Rewarded AD that not displayed."
+					},
+					"lasterrorcode": {
+						"translated-name": "lastErrorCode",
+						"description": "Last Rewarded AD error code."
+					},
+					"lasterrormessage": {
+						"translated-name": "lastErrorMessage",
+						"description": "Last Rewarded AD error message."
+					}
+				}
+			}
+		}
+	}
+}
